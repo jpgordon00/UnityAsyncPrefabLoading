@@ -11,3 +11,4 @@ Complete one-file async prefab loading and caching solution for Unity
 ## Why?
 - Avoid Prefab loading lag by having both loading and instantiation in an asyncronous call
 - Execute code when groups of prefabs have finished asyncronously with optional C# actions
+- Cache prefabs by keeping inactive parent objects in the scene and by avoiding Resources.Load
