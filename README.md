@@ -1,5 +1,5 @@
 # UnityAsyncPrefabLoading
-Complete one-file async prefab loading and caching solution for Unity
+A complete one-file async prefab loading and caching solution for Unity
 
 ## What does it do?
 - Load any amount of Prefabs at a time from Resources in a non blocking call
