@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Linq;
 using UnityEngine;
 using UnityEditor;
 using Newtonsoft.Json;
@@ -207,12 +208,7 @@ public class GroupLoader
         True only if all resources are done loading.
     */
     public bool IsAllDone() {
-        // case: all resources are done loading
-        bool complete = true;
-        foreach (var resource in _resources) {
-            if (resource.Result == null) complete = false;
-        }
-        return complete;
+        return _resources.FindAll(r => r.Result == null).Count == 0;
     }
 
     /*
