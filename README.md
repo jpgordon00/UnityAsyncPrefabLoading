@@ -6,7 +6,7 @@ A complete one-file async prefab loading and caching solution for Unity
 - Optional resource caching that avoids double resource loading
 - Simple callbacks for individual prefabs loaded and for groups of prefab loaded
 - Optional and automatic async GO instantition 
-- Calculates simple progress calculation and timer
+- Calculates simple progress and a timer for all prefab loading operations
 
 ## Why?
 - Avoid Prefab loading lag by having both loading and instantiation in an asyncronous call
